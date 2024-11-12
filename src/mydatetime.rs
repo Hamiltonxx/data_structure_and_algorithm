@@ -5,7 +5,7 @@
 // cargo test -- --nocapture
 #[test]
 fn test_datetime() {
-    use chrono::{DateTime, Utc, Local, Timelike};
+    use chrono::{DateTime, Utc, Local};
     
     // DateTime<Utc>, DateTime<Local>, DateTime<Tz>
     let utc_now: DateTime<Utc> = Utc::now();

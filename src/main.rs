@@ -7,7 +7,7 @@
 //     pub mod p3_2;
 // }
 mod exercism {
-    pub mod e3;
+    pub mod e5_space_age;
 }
 mod mydatetime;
 

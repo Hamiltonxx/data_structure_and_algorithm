@@ -22,5 +22,11 @@ fn main() {
     let nums = vec![1,2,3,4,5,6,7,8];
     let sum_of_odd: i32 = nums.iter().filter(|&x| x%2!=0).sum();
     println!("{}", sum_of_odd);
-    println!("{:?}", nums);
+    let strs = vec!["hello".to_string(),"world".to_string(),"foo".to_string(),"bar".to_string()];
+    let count = strs.iter().filter(|x| x.len()<4).count(); // x is &&str, .len() works on a
+                                                           // reference
+    println!("count: {}", count);
+    let dirs = [(-1,-1),(-1,0),(-1,1),(0,-1),(0,1),(1,-1),(1,0),(1,1)];
+    let cnt = dirs.iter().filter(|&&(r,c)| r<0||c<0).count();
+    println!("cnt: {}",cnt);
 }

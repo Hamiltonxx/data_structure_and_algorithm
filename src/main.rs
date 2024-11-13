@@ -7,7 +7,7 @@
 //     pub mod p3_2;
 // }
 mod exercism {
-    pub mod e6_sublist;
+    pub mod e7_minesweeper;
 }
 mod mydatetime;
 

@@ -15,11 +15,13 @@ fn main() {
         println!("{}", item);
     }
     // 集合操作
-    let set2:HashSet<_> = ["apple","banana"].iter().cloned().collect();
+//    let set2:HashSet<_> = ["apple","banana"].iter().collect(); // or into_iter()
+    let set2:HashSet<_> = HashSet::from(["apple","banana"]);
     let union:HashSet<_> = set.union(&set2).cloned().collect();
     println!("{union:?}");
     let intersection:HashSet<_> = set.intersection(&set2).cloned().collect();
     println!("{intersection:?}");
     let difference:HashSet<_> = set.difference(&set2).cloned().collect();
     println!("{difference:?}");
+
 }

@@ -7,9 +7,9 @@
 //     pub mod p3_2;
 // }
 mod exercism {
-    pub mod e7_minesweeper;
+    pub mod e8_luhn;
 }
-mod mydatetime;
+// mod mydatetime;
 
 fn main() {
     println!("The more you know about something, the more you realize how much you don’t know. The more you learn, the more you understand, and the more you realize how much more there is to learn.");

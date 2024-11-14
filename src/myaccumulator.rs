@@ -9,6 +9,10 @@ fn main() {
     println!("{sum2}");
     let product = numbers.iter().fold(1, |acc,&x| acc*x);
     println!("{product}");
+    // 数字各位数和
+    let num = 9876.to_string();
+    let sumdigit = num.chars().fold(0, |acc,c| acc + c.to_digit(10).unwrap());
+    println!("sumdigit: {sumdigit}");
 
 //    let even_nums: Vec<i32> = numbers.iter().filter(|&x| x%2==0).collect();
 //    不管是.filter(|&x|)还是.filter(|&&x|)都通不过

@@ -7,7 +7,7 @@
 //     pub mod p3_2;
 // }
 mod exercism {
-    pub mod e11_squares;
+    pub mod e12_grains;
 }
 // mod mydatetime;
 

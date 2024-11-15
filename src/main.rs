@@ -7,7 +7,7 @@
 //     pub mod p3_2;
 // }
 mod exercism {
-    pub mod e9_armstrong;
+    pub mod e10_beersong;
 }
 // mod mydatetime;
 
